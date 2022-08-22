@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import logo from './logo.svg'
+import logo from '.assets/twiter-logo.png'
 import './App.css'
 
 function App() {
@@ -7,37 +7,55 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.tsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
+      <section className='left-navigation-bar'>
+
+      
+        
+        <ul className='navigation-list'>
+
+        <a href='#'>
+        <img className='twitter-logo' width={50} src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Twitter-logo.svg" alt="" />
+        </a>
+
+        
+          <li className='navigation-list__item' >
+            <a href="#">Home</a>
+          </li>
+          <li className='navigation-list__item' >
+            <a href="#">Explore</a>
+          </li>
+          <li className='navigation-list__item' >
+            <a href="#">Notifications</a>
+          </li>
+          <li className='navigation-list__item' >
+            <a href="#">Messages</a>
+          </li>
+          <li className='navigation-list__item' >
+            <a href="#">Bookmarks</a>
+          </li>
+          <li className='navigation-list__item' >
+            <a href="#">Lists</a>
+          </li>
+          <li className='navigation-list__item' >
+            <a href="#">Profile</a>
+          </li>
+          <li className='navigation-list__item' >
+            <a href="#">More</a>
+          </li>
+
+          <button>Tweet</button>
+
+
+        </ul>
+
+        
+
+            
+      </section>
+
+      <section className='main-menu'><h1>Main menu</h1></section>
+
+      <section className='right-menu'><h1>Right menu</h1></section>
     </div>
   )
 }
