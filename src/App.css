@@ -9,25 +9,7 @@
   grid-template-columns: auto 1fr auto;
   height: 100vh;
   text-align: center;
+  background-color: black;
+  color: gray;
 }
 
-.left-navigation-bar{
-  border: solid 1px;
-  display: grid;;
-}
-.right-menu{
-  border: solid 1px;
-}
-.main-menu{
-  border: solid 1px;
-}
-.navigation-list{
-  list-style: none;
-  display: grid;
-  place-content: start;
-  gap: 2rem;
-  margin-left: 10rem;
-  text-align: start;
-  padding-right:3rem;
-  padding-top: 0.5rem;
-}
