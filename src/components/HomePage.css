@@ -4,8 +4,9 @@
     place-content: space-between;
     padding: 1rem;
     align-items: center;
+    color: white;
 }
 .home-icon{
     font-size: 2rem;
-    color: gray;
+    color: white;
 }

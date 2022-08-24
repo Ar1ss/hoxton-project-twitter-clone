@@ -1,12 +1,8 @@
-.left-navigation-bar{
-    border: solid 1px;
-    display: grid;;
-  }
-  .right-menu{
-    border: solid 1px;
-  }
+
+
   .main-menu{
-    border: solid 1px;
+    border-left: solid 0.5px;
+    border-right:solid 0.5px ;
   }
   .navigation-list{
     list-style: none;
