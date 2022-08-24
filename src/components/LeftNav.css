@@ -45,3 +45,21 @@
     cursor: pointer;
     border-radius: 3rem;
   }
+  .navigation-more__button{
+    background-color: #1d9cf000;
+    border: solid gray 1px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 3rem;
+    align-content: center;
+    text-align: center;
+    color: gray;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
