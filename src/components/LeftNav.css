@@ -15,18 +15,22 @@
     padding-top: 0.5rem;
   }
   .navigation-link{
+    color: white;
     text-decoration: none;
-    color: black;
     font-size: 1.5rem;
-    font-weight: 500;
-    text-align: start;
-    align-content: center;
-    align-items: center;
+    font-weight: bold;
+    transition: all 0.1s ease-in-out;
     display: grid;
     grid-template-columns: auto 1fr;
-    gap: 2rem;
-    padding-top: 0.5rem;
-    color: gray;
+    align-items: center;
+    text-align: start;
+    gap: 1.5rem;
+    padding: 0.7rem;   
+  }
+  .navigation-link:hover{
+    color: #1d9bf0;
+    border-radius:2rem;
+    background: #17181a;
   }
   .nav-icon{
     font-size: 2rem;
@@ -47,7 +51,6 @@
   }
   .navigation-more__button{
     background-color: #1d9cf000;
-    border: solid gray 1px;
     padding-right: 1rem;
     padding-left: 1rem;
     padding-top: 0.5rem;
@@ -55,7 +58,7 @@
     border-radius: 3rem;
     align-content: center;
     text-align: center;
-    color: gray;
+    color: white;
     display: grid;
     grid-auto-flow: column;
     align-items: center;
@@ -63,3 +66,4 @@
     font-size: 1.5rem;
     cursor: pointer;
   }
+  

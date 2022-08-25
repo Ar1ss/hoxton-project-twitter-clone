@@ -17,6 +17,10 @@ export function MainMenu() {
                     <button className="button" type="submit">Tweet</button>
                     
                 </form>
+
+                <div className="posts__section">
+                     
+                </div>
             </div>
         </section>
     )

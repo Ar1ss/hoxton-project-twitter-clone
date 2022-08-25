@@ -6,7 +6,7 @@ export function LeftNvigationBar() {
 
       <ul className='navigation-list'>
 
-        <Link to='#'>
+        <Link to='/'>
           <img className='twitter-logo' width={50} src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Twitter-logo.svg" alt="" />
         </Link>
 
