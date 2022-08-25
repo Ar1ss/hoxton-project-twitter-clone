@@ -87,3 +87,38 @@
     text-align: start;
     padding-left: 5rem;
 }
+.post-card__bottom{
+    padding: 1rem;
+    display: grid;
+    grid-auto-flow: column;
+    place-content: end;
+    gap: 3rem;
+    align-items: center;
+    text-align: center;
+}
+.like-button{
+    color: red;
+    font-size: 2rem;
+    border: none;
+    background-color: rgba(240, 248, 255, 0);
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+.post-likes{
+    display: grid;
+    grid-auto-flow: column;
+    place-content: end;
+    gap: 0.5rem;
+    align-items: center;
+    text-align: center;
+}
+.comment{
+    border-bottom:solid 1px gray;
+    display: grid;
+    padding: 0.5rem;
+    grid-auto-flow: column;
+    place-content: center;
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+}

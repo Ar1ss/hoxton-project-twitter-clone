@@ -1,4 +1,4 @@
-export function FeedPost({ post }) {
+export function FeedPost({ post , commentSection}) {
     return (
         <div className="post-card">
 
@@ -18,9 +18,23 @@ export function FeedPost({ post }) {
             <img className="post-image" width={400} src={post.postImage} alt="" />
 
             <div className="post-card__bottom">
-                <p className="post-likes">Likes {post.likes}</p>
-                <p className="post-comments">Comments {post.comments}</p>
+                <p className="post-likes">
+                    <button className="like-button">♡</button>
+                    {post.likes}
+                    </p>
+                <p className="post-comments">Comments : {post.commentCount}</p>
             </div>
+
+            <div>
+                {post.commentSection.map (comment => (
+                    <div className="comment">
+                    <img width={60} className="profile-image" src={comment.commentImage} alt="" />
+                    <p>{comment.commentText}</p>
+                    </div>
+                ))}
+            </div>
+
+            
         </div>
     )
 }

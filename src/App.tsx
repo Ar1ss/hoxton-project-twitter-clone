@@ -27,7 +27,7 @@ function App () {
       <LeftNvigationBar />
       
       <Routes>
-        <Route path='/' element={<MainMenu posts = {posts} />}/>
+        <Route path='/' element={<MainMenu posts = {posts}  />}/>
         <Route path='/explore' element={<div>Explore</div>} />
         <Route path='/notifications' element={<div>Notifications</div>} />
         <Route path='/messages' element={<div>Messages</div>} />
