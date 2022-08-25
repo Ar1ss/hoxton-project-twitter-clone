@@ -70,7 +70,7 @@ export function LeftNvigationBar() {
         <footer>
           <button className="account__button">
             <div>
-              <img className="account__image" width={50} src="https://pbs.twimg.com/profile_images/1553712988280000513/cI2VKVUb_400x400.jpg" alt="account-image" />
+              <img className="profile-image" width={50} src="https://pbs.twimg.com/profile_images/1553712988280000513/cI2VKVUb_400x400.jpg" alt="account-image" />
             </div>
             <div className="name">Roronoa Zoro</div>
             <div className="username">@roronoaZoro</div>

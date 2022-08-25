@@ -6,10 +6,12 @@
 
 .App{
   display: grid;
-  grid-template-columns: auto 1fr auto;
-  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 100%;
   text-align: center;
   background-color: black;
   color: gray;
 }
-
+.profile-image{
+  border-radius: 50%;
+}

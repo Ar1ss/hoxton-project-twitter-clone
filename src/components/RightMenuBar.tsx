@@ -1,5 +1,11 @@
+
+
 export function RightMenuBar (){
     return(
-        <section className='right-menu'><h1>Right menu</h1></section>
+        <section className='right-menu'>
+             <div className="right-menu__list">
+                <h1>Right Menu</h1>
+             </div>
+        </section>
     )
 }
