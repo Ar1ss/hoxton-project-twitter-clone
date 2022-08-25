@@ -9,75 +9,17 @@ import { Route, Routes } from 'react-router-dom'
 import { useState } from 'react'
 
 function App () {
-  const [posts, setPosts] = useState([
-    {
-      id: '1',
-      profileImage:
-        'https://pbs.twimg.com/profile_images/1553712988280000513/cI2VKVUb_400x400.jpg',
-      name: 'Rononoa Zoro',
-      userName: '  @rononoaZoro',
-      timeStamp: '11:11',
-      postImage:
-        'https://pbs.twimg.com/profile_images/1553712988280000513/cI2VKVUb_400x400.jpg',
-      postText: 'This is a post',
-      likes: '0',
-      comments: '0'
-    },
-    {
-      id: '2',
-      profileImage:
-        'https://pbs.twimg.com/profile_images/1553712988280000513/cI2VKVUb_400x400.jpg',
-      name: 'Aris Alshiqi',
-      userName: 'jdoe',
-      timeStamp: '11:11',
-      postImage:
-        'https://pbs.twimg.com/profile_images/1553712988280000513/cI2VKVUb_400x400.jpg',
-      postText: 'This is a post',
-      likes: '0',
-      comments: '0'
-    },
-    {
-      id: '3',
-      profileImage:
-        'https://pbs.twimg.com/profile_images/1553712988280000513/cI2VKVUb_400x400.jpg',
-      name: 'Ed',
-      userName: 'jdoe',
-      timeStamp: '11:11',
-      postImage:
-        'https://pbs.twimg.com/profile_images/1553712988280000513/cI2VKVUb_400x400.jpg',
-      postText: 'This is a post',
-      likes: '0',
-      comments: '0'
-    },
-    {
-      id: '4',
-      profileImage:
-        'https://pbs.twimg.com/profile_images/1553712988280000513/cI2VKVUb_400x400.jpg',
-      name: 'Nico',
-      userName: 'jdoe',
-      timeStamp: '11:11',
-      postImage:
-        'https://pbs.twimg.com/profile_images/1553712988280000513/cI2VKVUb_400x400.jpg',
-      postText: 'This is a post',
-      likes: '0',
-      comments: '0'
-    },
-    {
-      id: '5',
-      profileImage:
-        'https://pbs.twimg.com/profile_images/1553712988280000513/cI2VKVUb_400x400.jpg',
-      name: 'John Doe',
-      userName: 'jdoe',
-      timeStamp: '11:11',
-      postImage:
-        'https://pbs.twimg.com/profile_images/1553712988280000513/cI2VKVUb_400x400.jpg',
-      postText: 'This is a post',
-      likes: '0',
-      comments: '0'
-    }
-  ])
+  const [posts, setPosts] = useState([])
 
   return (
+
+    fetch('http://localhost:4000/posts')
+      .then(res => res.json())
+      .then(data => setPosts(data))
+      .then(() => {
+        console.log(posts)
+      }),
+
 
     <div className='App'>
 

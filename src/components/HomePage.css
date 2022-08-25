@@ -51,8 +51,11 @@
     display: grid;
     gap: 1rem;
     align-items: center;
+    border-bottom:solid 1px gray;
+    padding-bottom: 1rem;
     
 }
+
 .post-card__top{
     display: grid;
     grid-auto-flow:column;
@@ -60,7 +63,27 @@
     gap: 0.5rem;
     align-items: center;
     padding: 1rem;
+    text-align: center;
 }
 .post-card__top h2{
     color: white;
+    font-weight:400;
+}
+.post__top{
+    display: grid;
+    grid-auto-flow:row
+
+}
+.post-image{
+    border-radius:15px ;
+    justify-self: center;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 30px;
+}
+
+.post-card-h3{
+    display: grid;
+    text-align: start;
+    padding-left: 5rem;
 }
