@@ -17,24 +17,9 @@ export function LeftNvigationBar() {
               home
             </span> Home</Link>
         </li>
-        <li className='navigation-list__item' >
-          <Link className='navigation-link' to="/explore">
-            <span className="material-symbols-outlined nav-icon">
-              tag
-            </span>Explore</Link>
-        </li>
-        <li className='navigation-list__item' >
-          <Link className='navigation-link' to="/notifications">
-            <span className="material-symbols-outlined nav-icon">
-              notifications
-            </span>Notifications</Link>
-        </li>
-        <li className='navigation-list__item' >
-          <Link className='navigation-link' to="/messages">
-            <span className="material-symbols-outlined nav-icon">
-              mail
-            </span>Messages</Link>
-        </li>
+        
+        
+        
         <li className='navigation-list__item' >
           <Link className='navigation-link' to="/bookmarks">
             <span className="material-symbols-outlined nav-icon">
@@ -55,27 +40,23 @@ export function LeftNvigationBar() {
             Profile
           </Link>
         </li>
-        <li className='navigation-list__item' >
-          <button className="navigation-more__button">
-            <span className="material-symbols-outlined nav-icon">
-              more_horiz
-            </span> More
-          </button>
-        </li>
+       
 
 
-        <button className="button">Tweet</button>
+        
 
 
         <footer>
-          <button className="account__button">
+          <Link to="/profile">
+          <div className="button">
             <div>
               <img className="profile-image" width={50} src="https://pbs.twimg.com/profile_images/1553712988280000513/cI2VKVUb_400x400.jpg" alt="account-image" />
             </div>
             <div className="name">Roronoa Zoro</div>
             <div className="username">@roronoaZoro</div>
 
-          </button>
+          </div>
+          </Link>
         </footer>
 
       </ul>

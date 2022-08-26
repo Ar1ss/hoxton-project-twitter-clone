@@ -103,6 +103,7 @@
     background-color: rgba(240, 248, 255, 0);
     padding-right: 0.5rem;
     padding-left: 0.5rem;
+    cursor: pointer;
 }
 .post-likes{
     display: grid;
@@ -116,9 +117,81 @@
     border-bottom:solid 1px gray;
     display: grid;
     padding: 0.5rem;
-    grid-auto-flow: column;
-    place-content: center;
+    grid-template-columns: auto auto 1fr auto auto ;
+    place-items: center;
     gap: 2rem;
     align-items: center;
+
+}
+.comment-text{
+    color: white;
+    font-size: 20px;
+}
+.delete-button{
+    color: red;
+    border: none;
+    background-color: rgba(240, 248, 255, 0);
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    cursor: pointer;
+}
+.comment-form {
+    display: grid;
+    grid-auto-flow: column;
+    place-content: center;
+    gap: 0.5rem;
+    align-items: center;
     text-align: center;
+}
+.comment-form input{
+    display: grid;
+    grid-auto-flow: column;
+    place-content: center;
+    gap: 0.5rem;
+    align-items: center;
+    text-align: center;
+    border: none;
+    background-color: rgba(240, 248, 255, 0);
+    width: 10rem;
+    height: 2rem;
+    color: white;
+}
+.bookmarks{
+    height: 100vh;
+    display: grid;
+    border-right: solid 1px gray;
+    border-left: solid 1px gray;
+    
+}
+.bookmarks-title{
+    display: grid;
+    place-content: start;
+    padding: 1rem;
+    text-align: start;
+}
+.bookmarks-text{
+    display: grid;
+    place-content: center;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    text-align: center;
+    gap: 0.3rem;
+}
+.list{
+    height: 100vh;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+.list-items{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: 0.5rem;
+    text-align: center;
+    gap: 0.3rem;
+    border-bottom:1px solid gray;
+}
+.list h1{
+ border-bottom: 1px solid gray;
+ padding: 1rem;
+ text-align: start;
 }
